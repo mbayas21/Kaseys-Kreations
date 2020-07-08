@@ -33,7 +33,7 @@ body {
 
 #welcome-section {
     z-index: 1000;
-    background-image: url("Images/learn-to-crochet-background.jpg");
+    background-image: url("images/learn-to-crochet-background.jpg");
     background-size: cover;
     height: 40rem;
     position: relative;
