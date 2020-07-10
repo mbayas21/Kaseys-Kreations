@@ -6,12 +6,6 @@ body {
     font-family: 'Acme', sans-serif;
 }
 
-/* .container {
-    margin: 15rem auto !important;
-    border-radius: 0.5rem;
-    padding-bottom: 2rem;
-} */
-
 .nav-item {
     margin: 0.5rem 1.25rem;
     font-size: 1.25rem;
@@ -35,17 +29,86 @@ body {
     z-index: 1000;
     background-image: url("images/learn-to-crochet-background.jpg");
     background-size: cover;
+    background-position: 60% 85%;
+    background-repeat: no-repeat;
     height: 40rem;
+    /* height: 50vh; */
+    /* width: 100%; */
     position: relative;
 }
-
 /*** PRODUCTS SELECTORS ***/
-
 #welcome-section h1 {
     position: absolute;
-    top: 17.5rem;
-    left: 25rem;
+    top: 11.5rem;
+    left: 1rem;
+    color: #2A293E;
 }
+
+/******* FOR iPHONE MAX SCREENS *******/
+    
+    /** FOR PORTRAIT MODE **/
+    @media (min-width: 23.4375rem) and (min-height: 50.75rem){
+        #welcome-section h1 {
+            top: 12rem;
+            left: 0.5rem;
+        }
+    }
+    
+    /** FOR LANDSCAPE MODE **/
+    @media (min-width: 50.75rem) and (min-height: 23.4375rem){
+        #welcome-section h1 {
+            top: 12.5rem;
+            left: 12rem;
+        }
+    }
+/******* FOR IPAD SCREENS *******/
+    
+    /** FOR PORTRAIT MODE **/
+    @media (min-width: 48rem) and (min-height: 64rem){
+        #welcome-section h1 {
+            top: 13rem;
+            left: 10rem;
+        }
+    }
+    
+        /** FOR LANDSCAPE MODE **/
+        @media (min-width: 64rem) and (min-height: 48rem){
+            #welcome-section h1 {
+                top: 11.5rem;
+                left: 20rem;
+            }
+        }
+    
+    
+    /******* FOR IPAD PRO SCREENS *******/
+    
+        /** FOR PORTRAIT MODE **/
+    @media (min-width: 64rem) and (min-height: 85.375rem){
+        #welcome-section h1 {
+            top: 11.5rem;
+            left: 20rem;
+        }
+    }
+    
+        /** FOR LANDSCAPE MODE **/
+    @media (min-width: 85.375rem) and (min-height: 64rem){
+        #welcome-section h1 {
+            top: 14rem;
+            left: 30rem;
+        }
+    
+        #welcome-section {
+            background-position: 60% 55%;
+        }
+    }
+    
+    /******* FOR LAPTOP SCREENS *******/
+    @media (min-width: 80rem) {
+        #welcome-section h1 {
+            top: 7rem;
+            left: 26rem;
+        }
+    }
 
 #featured-items img {
     width: 18.75rem;
