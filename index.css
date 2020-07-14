@@ -4,6 +4,12 @@
 
 body {
     font-family: 'Acme', sans-serif;
+    background-image: linear-gradient(to bottom, #edd3c5, transparent);
+
+}
+
+body, html {
+    min-height: 100%;
 }
 
 .nav-item {
@@ -159,6 +165,7 @@ body {
     margin: 0 auto;
 }
 
+
 .footer-links{
     list-style-type: none;
     text-align: center;
@@ -183,17 +190,27 @@ body {
     left: 0;
 }
 
-/*** FOOTER SELECTORS END ***/
-
-/* #container-image {
-    height: 27.5rem;
-    display: inline-block;
-    width: 40%;
-    vertical-align: middle;
+#about-me-footer-section {
+    position: fixed;
+    bottom: 0;
 }
 
-#container-form {
-    display: inline-block;
-    width: 40%;
+/*** FOOTER SELECTORS END ***/
+
+/**FOR ABOUT.html **/
+
+/* @media(min-width: 320px) {
+    #about-me-title, #about-me-img {
+        text-align: center;
+    }
 } */
 
+/* @media (min-width: 320px) {
+    #about-me-container span.lead {
+        text-align: center;
+    }
+} */
+ 
+#about-me-container {
+  padding: 5rem 0;  
+}
